@@ -75,7 +75,7 @@ DShot::DShot(HardwareSerial* uart, DShotType type)
  */
 void DShot::sendThrottle(int16_t throttle, bool telemetry)
 {
-    sendPackage(createPackage(fmax(fmin(throttle, 1999), 0) + 48, telemetry));
+    sendPackage(createPackage(fmax(fmin(throttle, DSHOT_MAX_THROTTLE), DSHOT_MIN_THROTTLE) + 48, telemetry));
 }
 
 /**
