@@ -3,8 +3,8 @@
 constexpr uint8_t DSHOT_ZERO_BYTE = 0b1111'1000;
 constexpr uint8_t DSHOT_ONE_BYTE = 0b1000'0000;
 
-constexpr uint8_t DSHOT_MIN_THROTTLE = 0;
-constexpr uint8_t DSHOT_MAX_THROTTLE = 1999;
+constexpr uint16_t DSHOT_MIN_THROTTLE = 0;
+constexpr uint16_t DSHOT_MAX_THROTTLE = 1999;
 
 enum DShotType {
     DShot150,
